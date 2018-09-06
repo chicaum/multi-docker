@@ -16,7 +16,7 @@ after_success:
   #login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #push images
-  - docker push asilva/nulti-nginx
+  - docker push asilva/multi-nginx
   - docker push asilva/multi-client
   - docker push asilva/multi-server
   - docker push asilva/multi-worker
